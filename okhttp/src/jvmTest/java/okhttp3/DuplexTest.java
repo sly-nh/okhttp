@@ -547,7 +547,7 @@ public final class DuplexTest {
         new MockDuplexResponseBody()
             .sendResponse("success!")
             .exhaustResponse()
-            .cancelStream(ErrorCode.NO_ERROR));
+            .cancelStream(ErrorCode.CANCEL));
 
     Call call = client.newCall(new Request.Builder()
         .url(server.url("/"))
@@ -579,7 +579,7 @@ public final class DuplexTest {
 
     mockDuplexResponseBody.awaitSuccess();
 
-    assertThat(log.take()).contains("StreamResetException: stream was reset: NO_ERROR");
+    assertThat(log.take()).contains("StreamResetException: stream was reset: CANCEL");
   }
 
   /**
