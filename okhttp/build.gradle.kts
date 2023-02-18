@@ -92,6 +92,8 @@ kotlin {
         implementation(projects.okhttpBrotli)
         implementation(projects.okhttpDnsoverhttps)
         implementation(projects.okhttpSse)
+        implementation(libs.squareup.moshi)
+        implementation(libs.squareup.moshi.kotlin)
         implementation(libs.squareup.okio.fakefilesystem)
         implementation(libs.conscrypt.openjdk)
         implementation(libs.junit)
