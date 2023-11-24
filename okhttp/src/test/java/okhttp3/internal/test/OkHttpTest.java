@@ -1,4 +1,4 @@
-package okhttp3.internal.publicsuffix;
+package okhttp3.internal.test;
 
 import okhttp3.Call;
 import okhttp3.Callback;
@@ -14,7 +14,7 @@ import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @description:
+ * @description: xht-http-test
  * @author: xiaohaotian
  * @date: 2023/4/4 17:57
  */
