@@ -25,7 +25,7 @@ public class OkHttpTest {
         OkHttpClient okHttpClient = new OkHttpClient();
 
         Request.Builder builder = new Request.Builder();
-        Request req = builder.url("https://www.baidu.com").build();
+        Request req = builder.url("http://www.baidu.com").build();
         Response resp = okHttpClient.newCall(req).execute();
         String s = resp.body().source().readUtf8();
         System.out.println(s);
